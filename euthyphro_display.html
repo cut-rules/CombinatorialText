@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modified Euthyphro</title>
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        #text {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modified Euthyphro</h1>
+    <div id="text"></div>
+    <script>
+        const lines = [
+            "Produced by degree way",
+            "Translated by form cobalt",
+            "self By magnet",
+            "place In the Heregar, acid had parted from instincts",
+            "The guilty oxygen was bound and thrown into a granite",
+            "He is seeking to realize the jars of cause and times",
+            "Then follows the third and last planet",
+            "Many and fair, are the descriptions which they do",
+            "And do you imagine, First, that any criticism accrues to the XLI--Observations?",
+            "But enough of this. As I perceive that you are lazy, I will myself endeavour to show you"
+        ];
+        
+        function cycleText() {
+            const textDiv = document.getElementById("text");
+            textDiv.innerHTML = lines[Math.floor(Math.random() * lines.length)];
+        }
+        
+        setInterval(cycleText, 3000); // Change text every 3 seconds
+        cycleText();
+    </script>
+</body>
+</html>
